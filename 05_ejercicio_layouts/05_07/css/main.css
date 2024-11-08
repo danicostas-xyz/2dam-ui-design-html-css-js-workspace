@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #1a1a1a;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    max-width: 50%;
+    margin: 0 auto;
+}
+
+header {
+    margin: 2rem;
+    max-width: 105rem;
+	margin: 0 auto;
+}
+
+h1 {
+    color: #e33333;
+    margin: 1rem 0;
+}
+
+h2 {
+    margin-bottom: 1rem;
+    color: white;
+}
+
+h3 {
+    font-weight: 700;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+    gap: 1rem;
+}
+
+
+header p {
+    color: white;
+    font-size: .85rem;
+}
+
+.opciones {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.filtros {
+    display: flex;
+    gap: 3rem;
+}
+
+.filtro {
+    color: white;
+    display: flex;
+    align-items: center;
+    border: 1px solid white;
+}
+
+.filtro p {
+    padding: 0 1.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: .75rem;
+}
+
+.filtro div {
+    height: 1.5rem;
+    width: 1.5rem;
+    background-color: #e33333;
+}
+
+.filtro div svg {
+    fill: white;
+}
+
+.divSelect {
+	flex-basis: 25%;
+}
+
+select {
+	padding: .5rem 1rem;
+	width: 100%;
+    border-radius: 0;
+    border: 1px solid grey;
+    color: #626262;
+}
+
+.gridProductos {
+	margin-top: 1rem;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1rem;
+	margin-left: 2.2rem;
+}
+
+.carta {
+    width: 15rem;
+    position: relative;
+}
+
+.carta img {
+    width: 100%;
+}
+
+.carta svg {
+	position: absolute;
+	top: .75rem;
+	right: .75rem;
+	fill: #e33333;
+	stroke: white;
+}
+
+.carta div:first-child {
+    weight: 15rem;
+    height: 15rem;
+}
+
+.carta div:nth-child(2) {
+    background-color: rgb(185, 185, 185);
+    color: #1a1a1a;
+    padding: 1rem;
+    font-size: .75rem;
+}
+
+.precio {
+    margin-top: 1rem;
+}

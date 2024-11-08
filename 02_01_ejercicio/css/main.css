@@ -1,0 +1,205 @@
+/* BEGIN IMPORTS */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* END IMPORTS */
+
+/* BEGIN CUSTOM PROPERTIES */
+
+:root  {
+    --primary: #e33333;
+    --black: #1a1a1a;
+    --green: #86C127;
+    --fuchsia: #DF127B;
+    --yellow: #F7C200;
+    --blue: #4493a0;
+
+}
+
+/* END CUSTOM PROPERTIES */
+
+/* BEGIN UTILITIES */
+
+.container {
+	width: 1024px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	gap: 15px;
+}
+
+/* END UTILITIES */
+
+/* BEGIN BROWSER RESET */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* END BROWSER RESET */
+
+/* BEGIN FONT PROPERTIES
+    - Minor Third Font Scale 
+*/
+
+h1 {
+    font-size: 2.986rem;
+}
+
+h2 {
+    font-size: 2.488rem;
+}
+
+h3 {
+    font-size: 2.074rem;
+}
+
+h4 {
+    font-size: 1.728rem;
+}
+
+h5 {
+    font-size: 1.44rem;
+}
+
+h6 {
+    font-size: 1.2rem;
+}
+
+p {
+    font-size: 1rem;
+}
+
+.small {
+    font-size: 0.833rem;
+}
+
+.small-xs {
+    font-size: 0.694rem;
+}
+
+/* END FONT PROPERTIES */
+
+/* RULES: */
+
+body {
+	font-family: "Montserrat", sans-serif;
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    background-color: #1a1a1a;
+}
+
+section {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 15px;
+}
+
+.cajaLarga {
+    width: 50%;
+    height: 150px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+
+}
+
+.peques {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 50%;
+    gap: 5px;
+}
+
+.cajaPeque {
+    border: 1px solid black;
+    background-color: white;
+    padding: 30px;
+    width: 200px;
+    height: 100px;
+    border: 4px solid var(--green);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cajaLarga {
+    border-width: 10px;
+    border-color: var(--green) var(--yellow) var(--blue) var(--fuchsia);
+}
+
+#section2 .cajaLarga {
+    border-right-style: dotted;
+    border-bottom-style: groove;
+    border-left-style: double;
+}
+
+#section3 .cajaLarga {
+	border-radius: 0px 50px 82px 25px;
+}   
+
+#section1 .peques .cajaPeque:first-child, #section1 .peques .cajaPeque:nth-child(2) {
+	border-radius: 150px 150px 0 0;
+}
+
+.leaf {
+    border-radius: 0px 150px;
+}
+
+.leaf:first-child {
+    border-color: var(--fuchsia);
+}
+
+.leaf:last-child {
+	border-width: 3px 25px 3px 28px;
+    border-color: var(--blue) var(--blue) var(--fuchsia) var(--fuchsia);
+    background-color: var(--green);
+}
+
+.bullet {
+	border-radius: 15px 100px 100px 15px;
+}
+
+.bullet:nth-child(2) {
+    border-color: var(--blue);
+    border-width: 6px;
+}
+
+.bullet:nth-child(3) {
+    border-style: groove;
+    border-width: 10px;
+    border-color: var(--green) var(--yellow) var(--blue) var(--fuchsia);
+}
+
+#section1 .peques .cajaPeque:nth-child(2) {
+    border-bottom-style: dashed;
+    border-right: 15px groove var(--green);
+    border-left: 15px groove var(--green);
+    border-left-style: groove;
+}
+
+#section1 .peques .cajaPeque:nth-child(3) {
+    border-color: var(--yellow);
+    border-radius: 15px;
+    border-width: 5px;
+}
+
+#section2 .peques .cajaPeque:nth-child(1) {
+	border-radius: 90px 90px 167px 166px;
+	border-width: 0px 15px 0px 15px;
+	border-style: double;
+	border-color: var(--fuchsia);
+}
+
+.cajaPeque p {
+    font-weight: bold;
+}

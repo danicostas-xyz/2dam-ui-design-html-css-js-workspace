@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #1a1a1a;
+}
+
+section {
+    margin: 1rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+}
+
+div {
+    background-color: #e33333;
+    width: 12.5rem;
+    height: 12.5rem;
+}

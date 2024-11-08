@@ -1,0 +1,138 @@
+/* BEGIN IMPORTS */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* END IMPORTS */
+
+/* BEGIN CUSTOM PROPERTIES */
+
+:root  {
+    --primary: #e33333;
+    --black: #1a1a1a;
+    --white: rgb(222, 222, 222);
+}
+
+/* END CUSTOM PROPERTIES */
+
+/* BEGIN UTILITIES */
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* END UTILITIES */
+
+/* BEGIN BROWSER RESET */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* END BROWSER RESET */
+
+/* BEGIN FONT PROPERTIES
+    - Minor Third Font Scale 
+*/
+
+h1 {
+    font-size: 2.986rem;
+    color: var(--white);
+}
+
+h2 {
+    font-size: 2.488rem;
+    color: var(--white);
+}
+
+h3 {
+    font-size: 2.074rem;
+    color: var(--white);
+}
+
+h4 {
+    font-size: 1.728rem;
+}
+
+h5 {
+    font-size: 1.44rem;
+}
+
+h6 {
+    font-size: 1.2rem;
+}
+
+p {
+    font-size: 1rem;
+    color: color: var(--white);
+}
+
+.small {
+    font-size: 0.833rem;
+}
+
+.small-xs {
+    font-size: 0.694rem;
+}
+
+/* END FONT PROPERTIES */
+
+/* RULES: */
+
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: var(--black);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+ul {
+    color: var(--white);
+}
+
+.caja {
+    background-color: var(--primary);
+    width: calc(400px * 1.33);
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    border: 3px solid white;
+}
+
+.caja2 {
+	background-color: #ffafaf;
+	width: 200px;
+	height: 150px;
+	border: 3px solid white;
+	border-radius: 25px;
+	transition: 0.25s;
+	transition-property: box-shadow, background-color;
+	padding: 20px;
+	overflow: scroll;
+}
+.caja2:hover {
+    box-shadow: 1px 1px 10px 1px #0000006e;
+    background-color: #ffafaf;
+}
+
+
+
+p {
+	width: 90%;
+	height: 90%;
+}
+
+.parrafo {
+    overflow: hidden;
+}
+

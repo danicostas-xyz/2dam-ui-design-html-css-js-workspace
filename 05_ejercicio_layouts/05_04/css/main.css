@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #1a1a1a;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    margin: 2rem;
+    max-width: 105rem;
+	margin: 0 auto;
+}
+
+h1 {
+    color: #e33333;
+    margin: 1rem 0;
+}
+
+h2 {
+    margin-bottom: 1rem;
+    color: white;
+}
+
+h3 {
+    font-weight: 700;
+}
+
+
+main {
+	max-width: 105rem;
+	margin: 0 auto;
+	display: flex;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+	gap: 15px;
+}
+
+.carta {
+	width: 25rem;
+	height: 31.25rem;
+	background-color: whitesmoke;
+	border: 1px solid #e33333;
+}
+
+.carta img {
+    width: 100%;
+}
+
+.textoCarta {
+    margin: 1rem 1rem;
+}
+
+p {
+    font-size: 1.05rem;
+    margin-top: 1rem;
+}
+

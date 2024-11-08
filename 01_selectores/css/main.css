@@ -1,0 +1,85 @@
+/* BEGIN IMPORTS */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* END IMPORTS */
+
+/* BEGIN CUSTOM PROPERTIES */
+
+:root {
+    --primary: #e33333;
+    --black: #1a1a1a;
+}
+
+/* END CUSTOM PROPERTIES */
+
+/* BEGIN UTILITIES */
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* END UTILITIES */
+
+/* BEGIN BROWSER RESET */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* END BROWSER RESET */
+
+/* BEGIN FONT PROPERTIES
+    - Minor Third Font Scale 
+*/
+
+h1 {
+    font-size: 2.986rem;
+    color: white;
+}
+
+h2 {
+    font-size: 2.488rem;
+    color: rgb(222, 222, 222);
+}
+
+h3 {
+    font-size: 2.074rem;
+    color: rgb(222, 222, 222);
+}
+
+h4 {
+    font-size: 1.728rem;
+}
+
+h5 {
+    font-size: 1.44rem;
+}
+
+h6 {
+    font-size: 1.2rem;
+}
+
+p {
+    font-size: 1rem;
+    color: rgb(186, 186, 186);
+}
+
+.small {
+    font-size: 0.833rem;
+}
+
+.small-xs {
+    font-size: 0.694rem;
+}
+
+/* END FONT PROPERTIES */
+
+/* RULES: */
+
+body {
+    font-family: "Montserrat", sans-serif;
+}

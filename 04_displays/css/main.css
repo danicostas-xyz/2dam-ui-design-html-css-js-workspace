@@ -1,0 +1,153 @@
+/* BEGIN IMPORTS */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* END IMPORTS */
+
+/* BEGIN CUSTOM PROPERTIES */
+
+:root  {
+    --primary: #e33333;
+    --black: #1a1a1a;
+}
+
+/* END CUSTOM PROPERTIES */
+
+/* BEGIN UTILITIES */
+
+.container {
+	width: 900px;
+	height: 900px;
+	border: 8px solid white;
+	display: flex;
+	flex-direction: column;
+	padding: 8px;
+	gap: 8px;
+    animation: animacion 2.5s infinite linear;
+}
+
+/* END UTILITIES */
+
+/* BEGIN BROWSER RESET */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* END BROWSER RESET */
+
+/* BEGIN FONT PROPERTIES
+    - Minor Third Font Scale 
+*/
+
+h1 {
+    font-size: 2.986rem;
+    color: white;
+}
+
+h2 {
+    font-size: 2.488rem;
+    color: rgb(222, 222, 222);
+}
+
+h3 {
+    font-size: 2.074rem;
+    color: rgb(222, 222, 222);
+}
+
+h4 {
+    font-size: 1.728rem;
+}
+
+h5 {
+    font-size: 1.44rem;
+}
+
+h6 {
+    font-size: 1.2rem;
+}
+
+p {
+    font-size: 3rem;
+    color: var(--black)
+}
+
+.small {
+    font-size: 0.833rem;
+}
+
+.small-xs {
+    font-size: 0.694rem;
+}
+
+/* END FONT PROPERTIES */
+
+/* RULES: */
+
+body {
+    min-height: 100vh;
+    font-family: "Montserrat", sans-serif;
+    background-color: var(--black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cubo {
+	width: calc(900px/4);
+	height: calc(900px/4);
+	border-radius: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+}
+
+.rojo {
+    background-color: #e33333;
+}
+
+.naranja {
+    background-color: #e0e333;
+}
+
+.amarillo {
+    background-color: #e3ba33;
+}
+
+.verde {
+    background-color: #5ce333;
+}
+
+.cyan {
+    background-color: #33e3ae;
+}
+
+.azul {
+    background-color: #3362e3;
+}
+
+.violeta{
+    background-color: #8533e3;
+}
+
+.rosa {
+    background-color: #e333a8;
+}
+
+
+@keyframes animacion {
+    0% {
+        border-color: #e33333;
+    }
+
+    50% {
+        border-color: #5ce333;
+    }
+
+    100% {
+        border-color: #e333a8;
+    }
+}
