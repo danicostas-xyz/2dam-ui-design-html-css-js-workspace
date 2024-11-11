@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-    var boton = document.getElementById("boton");
-    var body = document.querySelector("body");  // o bien: var body = document.body;
+    let boton = document.getElementById("boton");
+    let body = document.querySelector("body");
     
     boton.onclick = (ev) => {
         ev.preventDefault();
