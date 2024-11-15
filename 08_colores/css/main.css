@@ -1,0 +1,164 @@
+/* Begin Imports*/
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Roboto+Slab:wght@100..900&display=swap');
+/* End Imports*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+
+    /* Primary Color Shades */
+    --color-primary-A: #90B4CE;
+    --color-primary-B: #5A96C0;
+    --color-primary-BASE: #124E78;
+    --color-primary-C: #010F18;
+    --color-primary-D: #000E17;
+
+    /* Alternative Color Shades */
+    --color-alternative-A: #FFFFFF;
+    --color-alternative-B: #FFFFFF;
+    --color-alternative-BASE: #F0F0C9;
+    --color-alternative-C: #707045;
+    --color-alternative-D: #81812B;
+
+    /* Accent Color Shades */
+    --color-accent-A: #FFF6D7;
+    --color-accent-B: #FFE388;
+    --color-accent-BASE: #F2BA05;
+    --color-accent-C: #322600;
+    --color-accent-D: #231B00;
+
+    /* Color Gradients */
+    --color-gradient-primary-d_to_alternative-a: linear-gradient(90deg, rgba(0,14,23,.25) 0%, rgba(255,255,255,.25) 100%);
+    --color-gradient-primary-d_to_accent-base: linear-gradient(90deg, rgba(242,186,5,.25) 0%, rgba(255,255,255,.25) 100%);
+    
+    /* Font Properties (Family & Scale) */
+    --font-primary: "Bree Serif", serif;
+    --font-alternative: "Roboto Slab", serif;
+    
+    --font-size-xs: 0.69rem; /*p.note*/
+    --font-size-sm: 0.83rem; /*p.caption*/
+    --font-size-md: 1rem; /*p*/ 
+    --font-size-lg: 1.2rem; /*h5*/
+    --font-size-xl: 1.44rem; /*h4*/
+    --font-size-2xl: 1.73rem; /*h3*/
+    --font-size-3xl: 2.07rem; /*h2*/
+    --font-size-4xl: 2.49rem; /*h1*/
+} 
+
+body {
+    font-family: var(--font-alternative);
+    background-color: whitesmoke;
+}
+
+button {
+    border: none;
+    padding: .5rem 1rem;
+    font-size: var(--font-size-md);
+    text-transform: uppercase;
+    font-family: var(--font-alternative);
+    font-weight: 700;
+    border-radius: .35rem;
+    align-self: flex-end;
+}
+
+h1 {
+    font-family: var(--font-primary);
+}
+
+.caja {
+    width: 75%;
+    margin: 2rem auto;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    border-radius: .35rem;
+}
+
+/* ---------- CAJA UNO ---------- */
+
+.caja.uno {
+    background-color: var(--color-primary-BASE);
+    color: var(--color-alternative-BASE);
+}
+
+.caja.uno button {
+    background-color: var(--color-accent-BASE);
+    color: var(--color-primary-BASE);
+}
+
+/* ---------- CAJA DOS ---------- */
+
+.caja.dos {
+    background-color: var(--color-primary-D);
+    color: var(--color-alternative-B);
+}
+
+.caja.dos button {
+    background-color: var(--color-accent-BASE);
+    color: var(--color-primary-D);
+}
+
+/* ---------- CAJA TRES ---------- */
+
+.caja.tres {
+    background-color: var(--color-primary-C);
+    color: var(--color-alternative-BASE);
+}
+
+.caja.tres button {
+    background-color: var(--color-accent-BASE);
+    color: var(--color-primary-C);
+}
+
+/* ---------- CAJA CUATRO ---------- */
+
+.caja.cuatro {
+    background-color: var(--color-primary-A);
+    color: var(--color-primary-C);
+}
+
+.caja.cuatro button {
+    background-color: var(--color-accent-B);
+    color: var(--color-primary-C);
+    border: 1px solid var(--color-primary-C);
+}
+
+/* ---------- CAJA CINCO ---------- */
+
+.caja.cinco {
+    background-color: var(--color-primary-B);
+    color: var(--color-alternative-A);
+}
+
+.caja.cinco button {
+    background-color: var(--color-accent-BASE);
+    color: var(--color-primary-C);
+    border: 1px solid var(--color-primary-C);
+}
+
+
+/* OVERLAY.HTML */
+
+.overlay {
+    background-image: var(--color-gradient-primary-d_to_alternative-a),url(../img/fondo.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay .caja.dos {
+    box-shadow: 10px 21px 108px -16px rgba(0,0,0,0.72);
+}
+
+::selection {
+    background-color: var(--color-accent-BASE);
+    color: var(--color-primary-C);
+}
