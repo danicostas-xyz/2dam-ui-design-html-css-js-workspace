@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+body {
+    background-color: #1a1a1a;
+    height: 100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Space Mono", monospace;
+}
+
+h2 {
+    font-size: 1.25rem;
+    text-align: center;
+    color: white;
+}
+
+p {
+    text-align: center;
+    color: rgb(201, 201, 201);
+    text-transform: uppercase;
+}
+
+div.container {
+    width: 900px;
+    height: 900px;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+div.cajas {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+    gap: 1rem;
+}
+
+button {
+	border: none;
+    padding: .25rem 1rem;
+	border-radius: .75rem;
+	text-transform: uppercase;
+	font-weight: normal;
+	font-size: 1rem;
+    font-family: "Space Mono", monospace;
+    background-color: transparent;
+    border: 1px solid #e33333;
+    color: white;
+    cursor: pointer;
+}
+
+#flipping {
+    animation: flipping 4s ease-in-out infinite;
+}
+
+#loading {
+    position: relative;
+    overflow: hidden;
+}
+
+#loading::after {
+	width: 0%;
+	content: "";
+    filter: drop-shadow(14px 0px 14px #e33333);
+	background-color: #e33333;
+	display: block;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+    animation: loading 4s ease-in-out infinite;;
+}
+
+#shining {
+    position: relative;
+    overflow: hidden;
+}
+
+#shining::after {
+	width: 215px;
+	content: "";
+	transform: rotate(45deg);
+	background: linear-gradient(0deg, rgba(255,0,0,0.6) 0%, rgba(255,255,255,0.2) 50%, rgba(191,0,0,0.5) 100%);
+	display: block;
+	/* height: 100%; */
+	position: absolute;
+	top: 0;
+	left: -148px;
+	height: 62px;
+	animation: shining 1.25s linear infinite;
+	filter: blur(10px);
+}
+
+#hacking {
+    animation: glitch 1.25s linear infinite;
+}
+
+#partying {
+    animation: pulse 1.25s linear infinite;
+
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(100%);
+    }
+
+    50% {
+        transform: scale(150%);
+    }
+
+    100% {
+        transform: scale(100%);
+    }
+    
+}
+
+@keyframes shining {
+    0% {
+        left: -250px;
+    }
+
+    100% {
+        left: 100px;
+    }
+    
+}
+
+@keyframes loading {
+    0% {
+        width: 0%;
+    }
+
+    45% {
+        width: 100%;
+    }
+
+    50% {
+        width: 100%;
+    }
+
+    55% {
+        width: 100%;
+    }
+
+    100% {
+        width: 0%;
+    }
+    
+}
+
+@keyframes glitch {
+    0% {
+        transform: skew(0deg);
+    }
+
+    15% {
+        transform: skew(30deg);
+
+    }
+
+    25% {
+        transform: skew(85deg);
+    }
+
+    35% {
+        transform: skew(0deg);
+    }
+
+    50% {
+        transform: skew(-35deg);
+    }
+
+    55% {
+        transform: skew(50deg);
+    }
+
+    100% {
+        transform: skew(0deg);
+    }
+}
+
+@keyframes flipping {
+    0% {
+        transform: rotate3d(0, 1, 0, 0);
+    }
+
+    45% {
+        transform: rotate3d(0, 1, 0, 180deg);
+    }
+
+    50% {
+        transform: rotate3d(0, 1, 0, 180deg);
+    }
+
+    55% {
+        transform: rotate3d(0, 1, 0, 180deg);
+    }
+
+    100% {
+        transform: rotate3d(0, 1, 0, 0);
+    }
+}
