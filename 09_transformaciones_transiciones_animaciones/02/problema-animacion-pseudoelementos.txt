@@ -1,0 +1,9 @@
+Si quieres animar un elemento y éste tiene un pseudoelemento asociado, no va a responder el z-index, porque se crea otra estructura de apilamiento. Si quitas la animación, ya funcionará el z-index.
+
+Por lo tanto, la "solución" sería, en lugar de crear un pseudoelemento, crear un elemento en el HTML
+
+<div>
+	<elementoAnimado></elementoAnimado>
+	<"PSEUDOELEMENTO"></PSEUDOELEMENTO>
+</div>
+
