@@ -1,23 +1,42 @@
 /* BEGIN IMPORTS */
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 /* END IMPORTS */
 
 /* BEGIN CUSTOM PROPERTIES */
 
-:root  {
-    --primary: #e33333;
-    --black: #1a1a1a;
-}
+:root {
+    --font-size-xs: 0.69rem;
+    --font-size-sm: 0.83rem;
+    --font-size-md: 1rem;
+    --font-size-lg: 1.2rem;
+    --font-size-xl: 1.44rem;
+    --font-size-2xl: 1.73rem;
+    --font-size-3xl: 2.07rem;
+    --font-size-4xl: 2.49rem;
+    --font-size-5xl: 2.99rem;
+
+    --font-family-primary: "Maven Pro", sans-serif;
+    --font-family-alternative: "Montserrat", sans-serif;
+
+    --color-black: #1a1a1a;
+    --color-grey: grey;
+    --color-primary: #FF2023;
+    --color-alternative: #D8B2C5;
+
+  }
 
 /* END CUSTOM PROPERTIES */
 
 /* BEGIN UTILITIES */
 
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
+	width: min(1250px, 80%);
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1rem;
 }
 
 /* END UTILITIES */
@@ -32,61 +51,12 @@
 
 /* END BROWSER RESET */
 
-/* BEGIN FONT PROPERTIES
-    - Minor Third Font Scale 
-*/
-
-h1 {
-    font-size: 2.986rem;
-    color: grey
-}
-
-h2 {
-    font-size: 2.488rem;
-    color: grey
-}
-
-h3 {
-    font-size: 2.074rem;
-    color: grey
-}
-
-h4 {
-    font-size: 1.728rem;
-}
-
-h5 {
-    font-size: 1.44rem;
-}
-
-h6 {
-    font-size: 1.2rem;
-}
-
-p {
-    font-size: 1rem;
-    color: grey
-}
-
-.small {
-    font-size: 0.833rem;
-}
-
-.small-xs {
-    font-size: 0.694rem;
-}
-
-/* END FONT PROPERTIES */
 
 /* RULES: */
 
 body {
     font-family: "Montserrat", sans-serif;
-    background-color: #1a1a1a;
-    height: 100dvh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background-color: var(--color-black);
 }
 
 .card {
@@ -97,6 +67,8 @@ body {
 	padding: .5rem;
 	height: 55%;
 	justify-content: space-between;
+    color: grey;
+    box-shadow: 10px 10px 31px 0px rgba(0,0,0,0.75);
 }
 
 .card__visual {
@@ -141,7 +113,7 @@ body {
 
 .card__text--title {
     font-weight: bold;
-    color: black;
+    color: var(--color-black);
 }
 
 .avatar {
@@ -161,9 +133,17 @@ body {
 
 .avatar__text {
     font-size: .75rem;
-    color: black;
+    color: var(--color-black);
 }
 
 .avatar__text--bold {
     font-weight: bold;
+}
+
+header, footer {
+
+    padding: 2rem;
+    text-align: center;
+    color: white;
+
 }
