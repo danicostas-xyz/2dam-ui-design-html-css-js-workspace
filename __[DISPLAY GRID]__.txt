@@ -1,0 +1,34 @@
+		__[DISPLAY: GRID]__
+
+- COMO NORMA GENERAL, SE DEFINEN SOLO LAS COLUMNAS, PORQUE LAS ROWS SE INFIEREN, SE HACE COMO UN FLEX-WRAP
+
+- se pueden combinar índices positivos y negativos en la grid (1 / -1) -> de la primera a la última (1 / -2) de la primera a la penúltima
+- se puede poner un índice donde inicia y un span (cuánto se expande) -> (1 / span 2)
+- grid-template-row / grid-template-column -> 100px 100px 100px -> repeat (3, 100px) || 100px 200px 100px 200px -> repeat(2, 100px 200px)
+- para simular un flex-wrap responsivo (cuando se encoge el ancho de la pantalla) se usan las propiedades auto-fit y auto-fill
+
+	AUTO-FILL
+		grid-template-columns(repeat(auto-fill, 200px))
+		width: 1000px /* Para que funcione el auto-fill, el contenedor tiene que tener un ancho, si no no funciona */
+		
+		Lo que va a hacer el auto-fill es generar columnas si tiene espacio (PERO SI NO HAY ELEMENTOS QUE RELLENEN EL ESPACIO, SE GENERAN COLUMNAS VACÍAS)
+
+	AUTO-FIT
+		grid-template-columns(repeat(auto-fit, 200px))
+		width: 1000px
+
+		A diferencia de auto-fill, auto-fit genera columnas dinámicamente, pero no añade columnas si no hay más elementos que lo rellenen (no genera columnas vacías).
+
+	MINMAX -> Permite hacer un redimensionamiento 
+
+		Propiedad exclusiva de CSS GRID.
+		Permite definir un mínimo y un máximo de las columnas/rows.
+		grid-template-columns(repeat(auto-fit, minmax(200px, 1fr)) /* Mínimo de ancho de columnas 200px, a partir de ahí, 1fr (lo que sea) */
+		width: 1000px
+		
+
+-> Si hay una columna o fila que ocupa mucho espacio y el elemento que la ocupa no ocupa el 100% del espacio disponible, se pueden usar las propiedades de posicioamiento de flexbox (justify-items (ojo, no justify-content) y align-items para posicionar el elemento. Es como que la columna/row hace de caja flexbox.	
+
+
+- ÁREAS: 
+	
